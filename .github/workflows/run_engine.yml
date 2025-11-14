@@ -31,7 +31,7 @@ jobs:
           ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
           DEFAULT_ETH_AMOUNT: '1.0'
         run: |
-          python -m ethx.engine 
+          python ethx/engine.py 
 
       - name: Commit snapshot.json if changed
         uses: EndBug/add-and-commit@v9
